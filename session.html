@@ -14,10 +14,17 @@
 
     <style>
         body h1,h2,h3,h4,h5,h6 {font-family: 'Crete Round', serif; }
-        
-        .w3-bar {font-family: 'Crete Round', serif; font-size: medium;}
-        
 
+        .w3-bar {font-family: 'Crete Round', serif; font-size: medium;}
+
+        .row .col-lg-4 {
+          padding: 40px 20px;
+        }
+
+        .card {
+
+          height: 350px;
+        }
         body, html {
         height: 100%;
         line-height: 1.8;
@@ -116,7 +123,7 @@
         <div class="container-fluid">
         <div class="card-deck">
 
-            
+
         <div class="card bg-light mb-4 col-md-4 col-sm-6">
             <img class="card-img-top deckimg" src="./img/AICVS 3.0-PHD.png" alt="Card image">
             <div class="card-body text-center">
@@ -146,15 +153,19 @@
         <br>
         <div class="container-fluid">
             <div class="card-deck">
-        <div class="card bg-light mb-4 col-md-4 col-sm-6">
-            <img class="card-img-top deckimg" src="./img/AICVS 2.0- AI FOR EVERYONE.png" alt="Card image">
-            <div class="card-body text-center">
-            <h4 class="card-title">AI For Everyone</h4>
-            <p class="card-text">By Ashish Salunkhe</p>
-            <a href="AshishSalunkhe.html" class="btn btn-dark">READ MORE</a>
-            </div>
-        </div>
-        
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                  <img class="card-img-top" src="./img/AICVS 2.0- AI FOR EVERYONE.png" alt="Card image">
+                  <div class="card-body text-center">
+                    <h4 class="card-title">AI For Everyone</h4>
+                    <p class="card-text">Ashish Salunkhe</p>
+                    <a href="AshishSalunkhe.html" class="btn btn-dark">Read More</a>
+                  </div>
+
+                </div>
+              </div>
+
+
         <div class="card bg-light mb-4 col-md-4 col-sm-6">
             <img class="card-img-top deckimg" src="./img/AICVS 2.0-PLACE.png" alt="Card image">
             <div class="card-body text-center">
@@ -163,7 +174,7 @@
             <a href="AffanSheikh.html" class="btn btn-dark">READ MORE</a>
             </div>
         </div>
-        
+
         <div class="card bg-light mb-4 col-md-4 col-sm-6">
             <img class="card-img-top deckimg" src="./img/AICVS 2.0-NLP.png" alt="Card image">
             <div class="card-body text-center">
@@ -172,7 +183,7 @@
             <a href="Manpreet Budhraja.html" class="btn btn-dark">READ MORE</a>
             </div>
         </div>
-        
+
         <div class="card bg-light mb-4 col-md-4 col-sm-6">
             <img class="card-img-top deckimg" src="./img/AICVS 2.0-RUTU.png" alt="Card image">
             <div class="card-body text-center">
@@ -202,8 +213,8 @@
             <a href="JinalChhajed.html" class="btn btn-dark">READ MORE</a>
             </div>
         </div>
-        
-        
+
+
         <div class="card bg-light mb-4 col-md-4 col-sm-6">
             <img class="card-img-top deckimg" src="./img/AICVS 1.0-INTERNSHIP.png" alt="Card image">
             <div class="card-body text-center">
@@ -212,7 +223,7 @@
             <a href="ShrustiJain.html" class="btn btn-dark">READ MORE</a>
             </div>
         </div>
-        
+
         <div class="card bg-light mb-4 col-md-4 col-sm-6">
             <img class="card-img-top deckimg" src="./img/AICVS 1.0-INTERNSHIP (1).png" alt="Card image">
             <div class="card-body text-center">
@@ -221,7 +232,7 @@
             <a href="EshaChiplunkar.html" class="btn btn-dark">READ MORE</a>
             </div>
         </div>
-        
+
         <div class="card bg-light mb-4 col-md-4 col-sm-6">
             <img class="card-img-top deckimg" src="./img/AICVS 1.0-oppo.png" alt="Card image">
             <div class="card-body text-center">
@@ -232,7 +243,7 @@
         </div>
         </div>
         </div>
-        
+
         <!-- Footer -->
         <footer class="w3-center w3-black w3-padding-64">
             <a href="./session.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
@@ -242,12 +253,12 @@
             <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZfSZGZDtVjPdkFkJqCQJXMjjcqxVrGvJffFvBTRKNPGcmXMlQxctgbpgdCrfKFfjsJCHL" class="text-light"><i class="fa fa-envelope w3-hover-opacity"></i></a>
             <a href="https://twitter.com/aicvs" class="text-light"><i class="fa fa-twitter w3-hover-opacity"></i></a>
             <a href="https://www.youtube.com/channel/UCYkmq4s5ciIau6BFI97XJlA" class="text-light"><i class="fa fa-youtube w3-hover-opacity"></i></a>
-            
+
             </div>
         </footer>
-        
+
         <script>
-        
+
         // Modal Image Gallery
         function onClick(element) {
             document.getElementById("img01").src = element.src;
@@ -255,11 +266,11 @@
             var captionText = document.getElementById("caption");
             captionText.innerHTML = element.alt;
         }
-        
-        
+
+
         // Toggle between showing and hiding the sidebar when clicking the menu icon
         var mySidebar = document.getElementById("mySidebar");
-        
+
         function w3_open() {
             if (mySidebar.style.display === 'block') {
             mySidebar.style.display = 'none';
@@ -267,7 +278,7 @@
             mySidebar.style.display = 'block';
             }
         }
-        
+
         // Close the sidebar with the close button
         function w3_close() {
             mySidebar.style.display = "none";
