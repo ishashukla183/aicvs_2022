@@ -18,7 +18,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+        rel="stylesheet">
   <link rel="stylesheet" href="./css/flipcard.css">
   <link rel="stylesheet" href="./css/w3.css">
   <style type="text/css">
@@ -126,10 +127,11 @@
       <a href="index.html" class="w3-bar-item w3-wide"> <img class="" src="./img/logo.png" alt="Logo" width="45" height="45"></a>
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small" style="padding : 10px;">
-        <a href="./session.html" class="w3-bar-item w3-button">HOME</a>
-        <a href="./events.html" class="w3-bar-item w3-button">EVENTS</a>
-        <a href="./blogs.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOGS</a>
-        <a href="./index.html#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
+          <a href="./index.html#team" class="w3-bar-item w3-button"> HOME </a>
+          <a href="./blogs.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOGS</a>
+            <a href="./events.html" class="w3-bar-item w3-button">EVENTS</a>
+
+      <a href="./index.html#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> CONTACT</a>
 
 
       </div>
@@ -144,9 +146,9 @@
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+      <a href="./index.html#team"  onclick="w3_close()" class="w3-bar-item w3-button"> HOME </a>
     <a href="events.html" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
-    <a href="./index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-    <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+      <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
     <a href="./session.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
   </nav>
 
@@ -187,7 +189,7 @@
           <br>
           <br>
           <center>
-            <h2>EVENTS 2021-2022</h2>
+            <h2>RECENT POSTS</h2>
           </center>
           <br>
           <br>
@@ -270,7 +272,7 @@
 <div class="row">
   <div class="col-lg-12">
     <a href="events.html">
-    <button type="button" class="btn btn-info" style="padding:10px 12px;">Load more...</button></a>
+    <button type="button" class="btn btn-info" style="padding:10px 12px;">VIEW MORE</button></a>
   </div>
 
 </div>
