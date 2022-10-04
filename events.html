@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>AICVS Homepage</title>
+  <title>EVENTS</title>
   <!-- Bootstrap core CSS -->
   <link href='./vendor/bootstrap/css/bootstrap.min.css' rel="stylesheet">
 
@@ -98,10 +98,10 @@
       <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./img/logo.png" alt="Logo" width="45" height="45"></a>
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small" style="padding : 10px;">
-        <a href="./index.html#about" class="w3-bar-item w3-button">EVENTS</a>
-        <a href="./index.html#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
-        <a href="./blogs.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOGS</a>
-        <a href="./session.html"  class="w3-bar-item w3-button">CONTACT</a>
+        <a href="./events.html" class="w3-bar-item w3-button">EVENTS</a>
+        <a href="./blogs.html" class="w3-bar-item w3-button"></i>BLOGS</a>
+        <a href="./about.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i>ABOUT</a>
+        <a href="./session.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>HOME</a>
       </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -113,11 +113,10 @@
 
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
-    <a href="./index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-    <a href="./index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
-    <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
-    <a href="./session.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
+        <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+        <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="./session.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
   </nav>
 
   <!-- Page Header -->
@@ -453,8 +452,6 @@
   </div>
     
 
-
-</body>
 <!-- Bootstrap core JavaScript -->
 <script src="/vendor/jquery/jquery.min.js"></script>
 <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -467,7 +464,7 @@
 
 <footer class="w3-center w3-black w3-padding-64">
   <div class="container container-fluid">
-    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <a href="./events.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
     <div class="w3-xlarge w3-section">
       <a href="https://www.instagram.com/aicvs/" class="text-light"><i class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/aicvs/"></i></a>
       <a href="https://www.linkedin.com/company/cummins-aicvs/mycompany/" class="text-light"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
@@ -477,5 +474,33 @@
     </div>
   </div>
 </footer>
+<script>
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+          mySidebar.style.display = 'none';
+      } else {
+          mySidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
+    </script>
+    <script src="/js/index.js"></script>
+</body>
+
 
 </html>
