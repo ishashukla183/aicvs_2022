@@ -22,47 +22,35 @@
   <link rel="stylesheet" href="./css/flipcard.css">
   <link rel="stylesheet" href="./css/w3.css">
   <style type="text/css">
-.nav-item{
-      font-family: 'Raleway', sans-serif !important;
-     
-      
-  }
-  .mainNav {
-    font-family: 'Raleway', sans-serif;
-    font-size: medium;
-  }
-    body {
+    .nav-item {
       font-family: 'Raleway', sans-serif !important;
       font-weight: 500 !important;
     }
-    html {
-    height: 100%;
-    line-height: 1.8;
-  }
-  .w3-col.m6,
-  .w3-half {
-    width: 99.99999%;
-  }
-
-    .events1{
-      background-color: #F6F6F6  !important;
+.card-img-top{
+  margin: 0px;
+}
+    body {
+      font-family: 'Raleway', sans-serif !important;
 
     }
+.card-text{
+  padding-bottom: 10px;
+}
+    .events1 {
+      background-color: #F6F6F6 !important;
+    }
+
     .events2 {
       background-color: #EFEFEF !important;
     }
-    .bgimg-1 {
-    background-position: center;
-    background-size: cover;
-    /* background-image: url("./w3images/ai-5202869_1280.jpg"); */
-    min-height: 100%;
-  }
+
     .bgimg-1 {
       background-position: center;
       background-size: cover;
       /* background-image: url("./w3images/ai-5202869_1280.jpg"); */
       min-height: 100%;
     }
+
     video {
       object-fit: cover;
       position: absolute;
@@ -81,29 +69,25 @@
       z-index: 1;
       background: rgba(0, 0, 0, 0.6);
     }
-    .photo {
-
-      height: 300px;
-      background-position: center;
-      transition: transform .2s;
-    }
 
     .text1 {
       letter-spacing: 3px;
       animation: text 3s 1;
-      
     }
-    .row .col-lg-4{
+
+
+
+    .row .col-lg-4 {
       padding: 40px 20px;
     }
 
     .card {
-
-      height: 450px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      height: 380px;
     }
-.card-old{
-  height:450px;
-}
+
+    
+
     @keyframes text {
       0% {
         color: black;
@@ -115,147 +99,27 @@
         margin-bottom: -40px;
       }
     }
+    .map {
+        min-width: 300px;
+        min-height: 300px;
+        width: 100%;
+        height: 100%;
+        background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 
-    /* ==== */
-    .w3-container .content h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: 'Raleway', sans-serif;
-  }
-
-  .mainNav {
-    font-family: 'Raleway', sans-serif;
-    font-size: medium;
-  }
-
-  body,
-  html {
-    height: 100%;
-    line-height: 1.8;
-  }
-
-
-  .w3-col.m6,
-  .w3-half {
-    width: 99.99999%;
-  }
-
-  /* Full height image header */
-  .bgimg-1 {
-    background-position: center;
-    background-size: cover;
-    /* background-image: url("./w3images/ai-5202869_1280.jpg"); */
-    min-height: 100%;
-  }
-
-  .bgimg-1 video {
-    position: absolute;
-    /* top: 0; */
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.95;
-  }
-
-  .w3-bar .w3-button {
-    padding: 16px;
-  }
-
-  .text1 {
-    letter-spacing: 10px;
-    animation: text 3s 1;
-  }
-
-
-  @keyframes text {
-    0% {
-      color: black;
-      margin-bottom: -40px;
     }
 
-    30% {
-      letter-spacing: 25px;
-      margin-bottom: -40px;
+    .header {
+        background-color: #F5F5F5;
+        color: #36A0FF;
+        height: 70px;
+        font-size: 27px;
+        padding: 10px;
     }
-  }
-
-  /* .card-img, .card-img-top {
-    border-top-left-radius: calc(6.25rem );
-    border-top-right-radius: calc(7.25rem );
-} */
-
-  .card-img-top {
-    align-items: center;
-    height: 250px;
-    width: 250px;
-    padding: 7px;
-    border-radius: 50%;
-
-  }
-  .card{
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  }
-
-  .cards {
-    display: flex;
-    flex-direction: row;
-
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
-  .cards h4,
-  h6,
-  h5,
-  p {
-    text-align: center;
-  }
-
-  .con {
-    background-color: black;
-    padding-left: 10px;
-    padding-right:10px;
-    color: white;
-    border-radius: 5px;
-    text-align: center;
-
-  }
-  .card,
-  .cardmain{
-
-      align-items: center;
-  }
-  .card-body {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding: 0.25rem;
-  }
-  /* .card{
-    border-color: black;
-    border-width: 4px;
-  } */
-
-  .card-img{
-    display: block;
-
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  }
-  .cbody{
-    text-align: center;
-    padding: 20px;
-  }
-
-
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
   </style>
 </head>
 
@@ -264,8 +128,8 @@
   <!-- Navbar (sit on top) -->
   <div class="w3-top mainNav">
     <div class="w3-bar w3-white w3-card" id="myNavbar">
-        <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./img/logo.png" alt="Logo" width="45"
-                height="45"></a>
+      <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="img/logo.png" alt="Logo" width="45"
+          height="45"></a>
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small ">
         <a href="./events.html" class="w3-bar-item w3-button">EVENTS</a>
@@ -282,41 +146,18 @@
     </div>
   </div>
 
-
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
-  style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+    style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
       &times;</a>
-  <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
-  <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
-  <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="./session.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-</nav>
-  <!-- Page Header -->
+    <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
+    <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+    <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="./session.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+    </nav>
 
-
-
-    <header class="masthead" >
-        <video src="./videos/bg_video.mp4" muted loop autoplay></video>
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-              <div class="site-heading" style="padding-top : 240px;">
-                <h1>AICVS</h1>
-                <span class="subheading">
-
-               Artificial Intelligence and Computer Vision Society
-
-              </span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </header>
-
+    
 
 
 
@@ -456,15 +297,8 @@
                 <p class="card-text">Yogesh Kulkarni</p>
                 <a href="kaggle7.html" class="btn btn-dark">Read More</a>
       <br><br>
-</div>
+</div> </div> </div> </div> 
 
-<!-- Bootstrap core JavaScript -->
-<script src="/vendor/jquery/jquery.min.js"></script>
-<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Custom scripts for this template -->
-<script src="/js/clean-blog.min.js"></script>
-<script src="/js/type.js"></script>
 
 
 
@@ -480,34 +314,48 @@
     </div>
   </div>
 </footer>
+<!-- Bootstrap core JavaScript -->
 
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom scripts for this template -->
 <script>
 
   // Modal Image Gallery
-  function onClick(element) {
+    function onClick(element) {
       document.getElementById("img01").src = element.src;
       document.getElementById("modal01").style.display = "block";
       var captionText = document.getElementById("caption");
       captionText.innerHTML = element.alt;
-  }
-
-
-  // Toggle between showing and hiding the sidebar when clicking the menu icon
-  var mySidebar = document.getElementById("mySidebar");
+    }
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
 
     function w3_open() {
-        if (mySidebar.style.display === 'block') {
-            mySidebar.style.display = 'none';
-        } else {
-            mySidebar.style.display = 'block';
-        }
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
     }
 
     // Close the sidebar with the close button
     function w3_close() {
-        mySidebar.style.display = "none";
+      mySidebar.style.display = "none";
     }
+
+    $('.flip').click(function () {
+      $(this).find('.card').addClass('flipped').mouseleave(function () {
+        $(this).removeClass('flipped');
+      });
+      return true;
+    });
+
   </script>
+<script src="/js/clean-blog.min.js"></script>
+<script src="/js/type.js"></script>
+
 <script src="/js/index.js"></script>
 
 </body>
