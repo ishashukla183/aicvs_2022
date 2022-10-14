@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Sessions</title>
+    <title>SESSIONS</title>
     <meta charset="UTF-8">
     <!-- Bootstrap core CSS -->
     <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -165,6 +165,14 @@ html {
             min-height: 100%;
         }
 
+        .events1 {
+      background-color: #F6F6F6 !important;
+    }
+
+    .events2 {
+      background-color: #EFEFEF !important;
+    }
+
         /* .w3-bar .w3-button {
             padding: 16px;
         } */
@@ -178,45 +186,44 @@ html {
 
 </head>
 
-<body>
+<body class="events1">
 
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top mainNav">
-        <div class="w3-bar w3-white w3-card" id="myNavbar">
-            <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./img/logo.png" alt="Logo" width="45"
-                    height="45"></a>
-            <!-- Right-sided navbar links -->
-            <div class="w3-right w3-hide-small ">
-                <a href="./events.html" class="w3-bar-item w3-button">EVENTS</a>
-                <a href="./blogs.html" class="w3-bar-item w3-button"></i>BLOGS</a>
-                <a href="./about.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i>ABOUT</a>
-                <a href="./session.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>HOME</a>
-            </div>
-            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <!-- Navigation -->
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top mainNav">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./img/logo.png" alt="Logo" width="45" height="45"></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small" style="padding : 10px;">
+        <a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-home fa-fw"></i>HOME</a>
+        <a href="./about.html" class="w3-bar-item w3-button"><i class="fa fa-user fa-fw"></i>ABOUT US</a>
+        <a href="./blogs.html" class="w3-bar-item w3-button"><i class="fa fa-th fa-fw"></i>BLOGS</a>
+        <a href="./events.html"  class="w3-bar-item w3-button"><i class="fa fa-calendar fa-fw"></i>EVENTS</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-                onclick="w3_open()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
+  </div>
 
     <!-- Sidebar on small screens when clicking the menu icon -->
     <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
         style="display:none" id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
             &times;</a>
-        <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
+        <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+        <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
         <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
-        <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-        <a href="./session.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+        <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
     </nav>
 
     <div class="container-fluid" style="padding-top: 40px; text-align:center;">
         <div class="container container-fluid">
 
             <div class="card-div">
-                <div class=" mt-5 p-3 my-3 " style="text-align:center; background-color:rgb(255, 255, 255);">
+                <div class=" mt-5 p-3 my-3 " style="text-align:center;">
                     <h2 class="w3-center">SESSIONS</h2>
                 </div>
                 <br>
@@ -263,6 +270,7 @@ html {
                     </div>
                 </div>
 
+                <br><br><br>
                 <div class="container-fluid">
                     <div class="row">
 
@@ -291,7 +299,10 @@ html {
 
                     </div>
                 </div>
-                
+
+                <br><br><br>
+
+
                 <div class="heading-center">2020-21</div>
                 <br>
                 <div class="container-fluid">
@@ -334,6 +345,7 @@ html {
                     </div>
                 </div>
 
+                <br><br><br>
                 <div class="container-fluid">
                     <div class="row">
 
@@ -348,7 +360,12 @@ html {
                             </div>
                         </div>
                     </div>
-                    
+                </div>
+            </div>
+
+            <div class="container-fluid" style="padding-top: 40px; text-align:center;">
+                <div class="container container-fluid">
+
                     <div class="heading-center">2019-20</div>
                     <br>
 
@@ -393,8 +410,10 @@ html {
                         </div>
                     </div>
 
+                    <br><br><br>
                     <div class="container-fluid">
                         <div class="row">
+
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="card">
                                     <img class="card-img-top" src="./img/AICVS 1.0-oppo.png" alt="Card image">
@@ -408,12 +427,11 @@ html {
 
                         </div>
                     </div>
-                
                 </div>
             </div>
         </div>
     </div>
-    <br>
+    <br><br><br>
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- <html lang="en" dir="ltr"> -->
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="./css/flipcard.css">
   <link rel="stylesheet" href="./css/w3.css">
   <style type="text/css">
+
 
 
 .w3-white, .w3-hover-white:hover {
@@ -143,13 +144,12 @@ html {
 .card-img-top{
   margin: 0px;
 }
+
+
     body {
       font-family: 'Raleway', sans-serif !important;
 
     }
-.card-text{
-  padding-bottom: 10px;
-}
     .events1 {
       background-color: #F6F6F6 !important;
     }
@@ -157,14 +157,12 @@ html {
     .events2 {
       background-color: #EFEFEF !important;
     }
-
     .bgimg-1 {
       background-position: center;
       background-size: cover;
       /* background-image: url("./w3images/ai-5202869_1280.jpg"); */
       min-height: 100%;
     }
-
     video {
       object-fit: cover;
       position: absolute;
@@ -183,25 +181,28 @@ html {
       z-index: 1;
       background: rgba(0, 0, 0, 0.6);
     }
+    .photo {
+
+      height: 350px;
+      background-position: center;
+      transition: transform .2s;
+    }
 
     .text1 {
       letter-spacing: 3px;
       animation: text 3s 1;
     }
-
-
-
-    .row .col-lg-4 {
+    .row .col-lg-4{
       padding: 40px 20px;
     }
 
     .card {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-      height: 380px;
+
+      height: 350px;
     }
-
-    
-
+.card-old{
+  height:400px;
+}
     @keyframes text {
       0% {
         color: black;
@@ -213,27 +214,13 @@ html {
         margin-bottom: -40px;
       }
     }
-    .map {
-        min-width: 300px;
-        min-height: 300px;
-        width: 100%;
-        height: 100%;
-        background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    .heading-center {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+        }
 
-    }
 
-    .header {
-        background-color: #F5F5F5;
-        color: #36A0FF;
-        height: 70px;
-        font-size: 27px;
-        padding: 10px;
-    }
-    .w3-bar .w3-button {
-      padding: 16px;
-    }
   </style>
 </head>
 
@@ -242,31 +229,30 @@ html {
   <!-- Navbar (sit on top) -->
   <div class="w3-top mainNav">
     <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="img/logo.png" alt="Logo" width="45"
-          height="45"></a>
+      <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./img/logo.png" alt="Logo" width="45" height="45"></a>
       <!-- Right-sided navbar links -->
+
       <div class="w3-right w3-hide-small ">
         <a href="./events.html" class="w3-bar-item w3-button">EVENTS</a>
         <a href="./blogs.html" class="w3-bar-item w3-button"></i>BLOGS</a>
         <a href="./about.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i>ABOUT</a>
         <a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>HOME</a>
-      </div>
+
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-        onclick="w3_open()">
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
   </div>
 
   <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
-    style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
-      &times;</a>
-    <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
+  <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+    <a href="./index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
+    <a href="./index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
     <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+
     <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
     <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
     </nav>
@@ -274,13 +260,17 @@ html {
     
 
 
+  <!-- Page Header -->  
 
   <div class="events1 container container-fluid" style="padding-top: 40px; margin:auto 0px;  min-width:100%;">
     <div class="container container-fluid">
+      <div class=" mt-5 p-3 my-3 " style="text-align:center;">
+        <h2 class="w3-center">BLOGS</h2>
+    </div>
         <br>
         <br>
         <center>
-          <h2>2021-2022</h2>
+          <div class="heading-center">2021-22</div>
         </center>
         <br>
         <br>
@@ -341,7 +331,7 @@ html {
         <br>
         <br>
         <center>
-          <h2>2019-2020</h2>
+          <div class="heading-center">2019-20</div>
         </center>
         <br>
         <br>
@@ -410,15 +400,50 @@ html {
                 <h4 class="card-title">Chatbot Development</h4>
                 <p class="card-text">Yogesh Kulkarni</p>
                 <a href="kaggle7.html" class="btn btn-dark">Read More</a>
-      <br><br>
-</div> </div> </div> </div> 
+              </div>
 
+
+
+            </div>
+
+          </div>
+
+
+
+
+            </div>
+
+          </div>
+
+
+
+
+
+          </div>
+
+
+
+
+      <br><br>
+</div>
+
+
+
+
+</body>
+<!-- Bootstrap core JavaScript -->
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="/js/clean-blog.min.js"></script>
+<script src="/js/type.js"></script>
 
 
 
 <footer class="w3-center w3-black w3-padding-64">
   <div class="container container-fluid">
-    <a href="./index.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
     <div class="w3-xlarge w3-section">
       <a href="https://www.instagram.com/aicvs/" class="text-light"><i class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/aicvs/"></i></a>
       <a href="https://www.linkedin.com/company/cummins-aicvs/mycompany/" class="text-light"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
@@ -428,49 +453,5 @@ html {
     </div>
   </div>
 </footer>
-<!-- Bootstrap core JavaScript -->
 
-<script src="/vendor/jquery/jquery.min.js"></script>
-<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Custom scripts for this template -->
-<script>
-
-  // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
-
-    function w3_open() {
-      if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-      } else {
-        mySidebar.style.display = 'block';
-      }
-    }
-
-    // Close the sidebar with the close button
-    function w3_close() {
-      mySidebar.style.display = "none";
-    }
-
-    $('.flip').click(function () {
-      $(this).find('.card').addClass('flipped').mouseleave(function () {
-        $(this).removeClass('flipped');
-      });
-      return true;
-    });
-
-  </script>
-<script src="/js/clean-blog.min.js"></script>
-<script src="/js/type.js"></script>
-
-<script src="/js/index.js"></script>
-
-</body>
 </html>
