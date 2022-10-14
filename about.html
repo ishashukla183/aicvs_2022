@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>ABOUT</title>
+<title>ABOUT US</title>
 
 <meta charset="UTF-8">
 
@@ -9,7 +9,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,11 +28,11 @@
   h4,
   h5,
   h6 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Crete Round', serif;
   }
 
   .mainNav {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', serif;
     font-size: medium;
   }
 
@@ -95,16 +94,14 @@
 } */
 
   .card-img-top {
-    align-items: center;
-    height: 250px;
-    width: 250px;
-    padding: 7px;
-    border-radius: 50%;
+    border-top-left-radius: calc(36rem);
+    border-top-right-radius: calc(36rem);
+    border-bottom-right-radius: calc(36rem);
+    border-bottom-left-radius: calc(36rem);
+    height: 8cm;
+    border-width: 4px;
+    border-color: black;
 
-  }
-  .card{
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  margin-bottom: 15px;
   }
 
   .cards {
@@ -127,24 +124,18 @@
 
   .con {
     background-color: black;
-    padding-left: 10px;
-    padding-right:10px;
+
     color: white;
     border-radius: 5px;
     text-align: center;
 
   }
-  .card,
-  .cardmain{
 
-      align-items: center;
-  }
   .card-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     min-height: 1px;
     padding: 0.25rem;
-
   }
   /* .card{
     border-color: black;
@@ -152,37 +143,41 @@
   } */
 
   .card-img{
-    display: block;
-
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
   }
   .cbody{
     text-align: center;
-    padding: 20px;
+
   }
+  .events1 {
+      background-color: #F6F6F6 !important;
+    }
+
+    .events2 {
+      background-color: #EFEFEF !important;
+    }
 
 </style>
 
-<body>
+<body class="events1">
 
+<!-- Navigation -->
   <!-- Navbar (sit on top) -->
   <div class="w3-top mainNav">
     <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="img/logo.png" alt="Logo" width="45"
-          height="45"></a>
+      <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./img/logo.png" alt="Logo" width="45" height="45"></a>
       <!-- Right-sided navbar links -->
-      <div class="w3-right w3-hide-small ">
-        <a href="./events.html" class="w3-bar-item w3-button">EVENTS</a>
-        <a href="./blogs.html" class="w3-bar-item w3-button"></i>BLOGS</a>
-        <a href="./about.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i>ABOUT</a>
-        <a href="./session.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>HOME</a>
+      <div class="w3-right w3-hide-small" style="padding : 10px;">
+        <a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-home fa-fw"></i>HOME</a>
+        <a href="./blogs.html" class="w3-bar-item w3-button"><i class="fa fa-th fa-fw"></i>BLOGS</a>
+        <a href="./events.html" class="w3-bar-item w3-button"><i class="fa fa-calendar fa-fw"></i>EVENTS</a>
+        <a href="./session.html" class="w3-bar-item w3-button"><i class="fa fa-bars fa-fw"></i>SESSIONS</a>
       </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-        onclick="w3_open()">
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
@@ -193,16 +188,18 @@
     style="display:none" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
       &times;</a>
-    <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
+    <a href="./index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="./index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
     <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
-    <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-    <a href="./session.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-    </nav>
+    <a href="./session.html" onclick="w3_close()" class="w3-bar-item w3-button">SESSIONS</a>
+  </nav>
 
   <!-- About Section -->
 
-  <div class="w3-container content" style="padding-top: 100px" id="about">
-    <h3 class="w3-center">ABOUT US</h3>
+  <div class="w3-container content" style="padding-top: 70px" id="about">
+    <div class=" mt-5 p-3 my-3 " style="text-align:center;">
+      <h2 class="w3-center">ABOUT US</h2>
+  </div>
     <div class="w3-row-padding w3-center" style="margin-top:64px">
       <div class="w3-half" style="padding:8px 20px">
         <i class="fa fa-desktop fa-3x "></i>
@@ -258,26 +255,25 @@
   </div>
   <br>
 
-  <div class="card cardmain" style="padding:10px;">
-    <img class="card-img-top" src="img/piyusha.jpg" alt="Card image cap">
-    <div class="card-body cbody">
-      <h4 class="card-title">Piyusha Nair - <b>Head Co-ordinator</b>
-        </h4>
+  <div class="cardmain">
+    <img class="card-img" src="img/piyusha.jpg" alt="Card image cap" style="height:13cm ;width:15cm; flex-direction: column;">
+    <div class="cbody">
+      <h4 class="card-title" style="padding:0.3cm">Piyusha Nair - Head Co-ordinator</h4>
         <h5>piyusha.nair@cumminscollege.in</h5>
     </div>
   </div>
 
   <br><br>
-
+  
   <div class="cards">
 
-    <div class="card" style="width: 18rem;" style="text-align:center;">
+    <div class="card" style="width: 18rem;">
       <img class="card-img-top" src="img/pranjal.jpg" alt="Card image cap">
       <div class="card-body">
         <h4 class="card-title">Pranjal Chouhan</h4>
         <h6 class="card-title">Projects & Internships</h6>
         <div class="con">
-          <p> pranjal.chouhan@cumminscollege.in </p>
+          <p>pranjal.chouhan@cumminscollege.in</p>
         </div>
 
         <hr>
@@ -366,7 +362,7 @@
   <br>
   <br>
   <!--
- Work Section
+ Work Section 
 <div class="w3-container" style="padding:70px 16px" id="work">
   <h3 class="w3-center">OUR WORK</h3>
   <p class="w3-center w3-large">What we've done for people</p>
@@ -405,7 +401,7 @@
 
   <!-- Footer -->
   <footer class="w3-center w3-black w3-padding-64">
-    <a href="./about.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
     <div class="w3-xlarge w3-section">
       <a href="https://www.instagram.com/aicvs/" class="text-light"><i class="fa fa-instagram w3-hover-opacity"
           href="https://www.instagram.com/aicvs/"></i></a>
@@ -423,37 +419,43 @@
   <script>
 
     // Modal Image Gallery
-      function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-      }
-      // Toggle between showing and hiding the sidebar when clicking the menu icon
-      var mySidebar = document.getElementById("mySidebar");
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
 
-      function w3_open() {
-        if (mySidebar.style.display === 'block') {
-          mySidebar.style.display = 'none';
-        } else {
-          mySidebar.style.display = 'block';
-        }
-      }
 
-      // Close the sidebar with the close button
-      function w3_close() {
-        mySidebar.style.display = "none";
-      }
 
-      $('.flip').click(function () {
-        $(this).find('.card').addClass('flipped').mouseleave(function () {
-          $(this).removeClass('flipped');
-        });
-        return true;
+
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
+
+    $('.flip').click(function () {
+      $(this).find('.card').addClass('flipped').mouseleave(function () {
+        $(this).removeClass('flipped');
       });
+      return true;
+    });
 
-    </script>
-    <script src="/js/index.js"></script>
+  </script>
+  <script src="/js/index.js"></script>
 </body>
 
 </html>

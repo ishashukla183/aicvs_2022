@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>AICVS Homepage</title>
+  <title>AICVS HomePage</title>
   <!-- Bootstrap core CSS -->
   <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -22,22 +22,18 @@
         rel="stylesheet">
   <link rel="stylesheet" href="./css/flipcard.css">
   <link rel="stylesheet" href="./css/w3.css">
-
+  
   <style type="text/css">
     .nav-item {
       font-family: 'Raleway', sans-serif !important;
       font-weight: 500 !important;
     }
-.card-img-top{
-  margin: 0px;
-}
+
     body {
       font-family: 'Raleway', sans-serif !important;
 
     }
-.card-text{
-  padding-bottom: 10px;
-}
+
     .events1 {
       background-color: #F6F6F6 !important;
     }
@@ -62,16 +58,7 @@
       z-index: 0;
     }
 
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: 1;
-      background: rgba(0, 0, 0, 0.6);
-    }
-
+    
     .text1 {
       letter-spacing: 3px;
       animation: text 3s 1;
@@ -84,11 +71,13 @@
     }
 
     .card {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-      height: 380px;
+
+      height: 350px;
     }
 
-    
+    .card-old {
+      height: 400px;
+    }
 
     @keyframes text {
       0% {
@@ -119,39 +108,51 @@
         font-size: 27px;
         padding: 10px;
     }
+
+    /* .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.6);
+    } */
+
   </style>
 </head>
 
 <body>
+  
   <!-- Navigation -->
   <!-- Navbar (sit on top) -->
   <div class="w3-top mainNav">
     <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="img/logo.png" alt="Logo" width="45"
-          height="45"></a>
+      <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./img/logo.png" alt="Logo" width="45" height="45"></a>
       <!-- Right-sided navbar links -->
-      <div class="w3-right w3-hide-small ">
-        <a href="./events.html" class="w3-bar-item w3-button">EVENTS</a>
-        <a href="./blogs.html" class="w3-bar-item w3-button"></i>BLOGS</a>
-        <a href="./about.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i>ABOUT</a>
-        <a href="./session.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>HOME</a>
+      <div class="w3-right w3-hide-small" style="padding : 10px;">
+        <a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-home fa-fw"></i>HOME</a>
+        <a href="./about.html" class="w3-bar-item w3-button"><i class="fa fa-user fa-fw"></i>ABOUT US</a>
+        <a href="./blogs.html" class="w3-bar-item w3-button"><i class="fa fa-th fa-fw"></i>BLOGS</a>
+        <a href="./events.html"  class="w3-bar-item w3-button"><i class="fa fa-calendar fa-fw"></i>EVENTS</a>
+        <a href="./session.html"  class="w3-bar-item w3-button"><i class="fa fa-bars fa-fw"></i>SESSIONS</a>
       </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-        onclick="w3_open()">
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
   </div>
-
+  
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
-      <a href="./session.html"  onclick="w3_close()" class="w3-bar-item w3-button"> HOME </a>
-    <a href="events.html" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
-      <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
-    <a href="./session.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-home fa-fw"></i>HOME</a>
+    <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user fa-fw"></i>ABOUT US</a>
+    <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class='fab fa-blogger fa-fw'></i>BLOGS</a>
+    <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-calendar fa-fw"></i>EVENTS</a>
+    <a href="./session.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-navicon fa-fw"></i>SESSIONS</a>
   </nav>
 
   <!-- Page Header -->
@@ -213,7 +214,6 @@
                 <div class="card-body text-center">
                   <h4 class="card-title">CV Learning Deck </h4>
                   <p class="card-text">Competition</p>
-
                   <a href="kaggle6.html" class="btn btn-dark">Read More</a>
                 </div>
               </div>
