@@ -326,25 +326,21 @@ nav {
   <!-- Navbar (sit on top) -->
 
   <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <!-- <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">&times;</a>
     <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-calendar fa-fw"></i>EVENTS</a>
-    <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class='fab fa-blogger fa-fw'></i>BLOGS</a>
+    <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fab fa-blogger fa-fw"></i>BLOGS</a>
     <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user fa-fw"></i>ABOUT US</a>
     <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-home fa-fw"></i>HOME</a>
-  </nav>
-=======
+  </nav> -->
+
     <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <!-- <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
       <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
       <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
       <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
       <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-    </nav>
-    </div>
->>>>>>> a62ce90810f75d2ab95858bccc878b7ccf4cde2d
-=======
->>>>>>> branch1
+    </nav> -->
 
     <!-- Page Header -->
 
@@ -663,6 +659,15 @@ nav {
 </div>
 </div>
     </div>
+
+  <script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active')
+    })
+  </script>
 
 
     <script>
