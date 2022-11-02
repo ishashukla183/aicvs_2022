@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>AICVS HomePage</title>
+  <title>AICVS</title>
   <!-- Bootstrap core CSS -->
   <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -18,8 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-        rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/flipcard.css">
   <link rel="stylesheet" href="./css/w3.css">
   <style type="text/css">
@@ -158,43 +157,54 @@ html{
 <body>
 
 
+  <nav class="navbar">
+    <div class="brand-title">Brand Name</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
     <!-- Navbar (sit on top) -->
-    <div class="mainNav">
+    <!-- <div class="mainNav">
       <div class="w3-bar w3-white w3-card" id="myNavbar">
-          <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./img/logo.png" alt="Logo" width="45"height="45"></a>
+          <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./img/logo.png" alt="Logo" width="45"height="45"></a> -->
           <!-- Right-sided navbar links -->
-          <div class="w3-right w3-hide-small ">
+          <!-- <div class="w3-right w3-hide-small ">
               <a href="./events.html" class="w3-bar-item w3-button">EVENTS</a>
               <a href="./blogs.html" class="w3-bar-item w3-button"></i>BLOGS</a>
               <a href="./about.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i>ABOUT</a>
               <a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>HOME</a>
-          </div>
-          <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-          <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-              onclick="w3_open()">
-              <i class="fa fa-bars"></i>
-          </a>
+          </div>          
       </div>
+    </div> -->
+<!-- Navbar for mobile -->
 
 
-  <!-- Navigation -->
-  <!-- Navbar (sit on top) -->
 
-  <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
-    <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-home fa-fw"></i>HOME</a>
-    <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user fa-fw"></i>ABOUT US</a>
-    <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class='fab fa-blogger fa-fw'></i>BLOGS</a>
-    <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-calendar fa-fw"></i>EVENTS</a>
-    <a href="./session.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-navicon fa-fw"></i>SESSIONS</a>
-  </nav>
+<!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  <!-- <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <i class="fa fa-bars"></i>
+  </a> -->
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<!-- <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
+  <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+  <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+</nav> -->
 
   <!-- Page Header -->
-
-
-
   <header class="masthead">
     <video src="./videos/bg_video.mp4" muted loop autoplay></video>
     <div class="overlay"></div>
@@ -402,32 +412,41 @@ html{
 
 
     <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-<!--
-    <script type="text/javascript">
-        jQuery(function ($) {
-            function init_map1() {
-                var myLocation = new google.maps.LatLng(38.885516, -77.09327200000001);
-                var mapOptions = {
-                    center: myLocation,
-                    zoom: 16
-                };
-                var marker = new google.maps.Marker({
-                    position: myLocation,
-                    title: "Property Location"
-                });
-                var map = new google.maps.Map(document.getElementById("map1"),
-                    mapOptions);
-                marker.setMap(map);
-            }
-            init_map1();
-        });
-    </script>
--->
+
+    <script>
+  
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+      
+      
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+      
+      function w3_open() {
+        if (mySidebar.style.display === 'block') {
+          mySidebar.style.display = 'none';
+        } else {
+          mySidebar.style.display = 'block';
+        }
+      }
+      
+      // Close the sidebar with the close button
+      function w3_close() {
+          mySidebar.style.display = "none";
+      }
+      </script>
+      <script src="/js/index.js"></script>
+
 </body>
+
 <!-- Bootstrap core JavaScript -->
 <script src="/vendor/jquery/jquery.min.js"></script>
 <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 <!-- Custom scripts for this template -->
 <script src="/js/clean-blog.min.js"></script>
 <script src="/js/type.js"></script>

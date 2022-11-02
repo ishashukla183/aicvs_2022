@@ -194,12 +194,16 @@ html{
     </div>
   </div>
   
+<!-- Navigation -->
+  <!-- Navbar (sit on top) -->
+
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
-        <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
-        <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-        <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">&times;</a>
+    <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-calendar fa-fw"></i>EVENTS</a>
+    <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class='fab fa-blogger fa-fw'></i>BLOGS</a>
+    <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user fa-fw"></i>ABOUT US</a>
+    <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-home fa-fw"></i>HOME</a>
   </nav>
 
 
@@ -420,32 +424,35 @@ html{
     </div>
   </div>
 </footer>
+
 <script>
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
+  
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+  
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
     }
-
-
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
-
-    function w3_open() {
-      if (mySidebar.style.display === 'block') {
-          mySidebar.style.display = 'none';
-      } else {
-          mySidebar.style.display = 'block';
-      }
-    }
-
-    // Close the sidebar with the close button
-    function w3_close() {
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
       mySidebar.style.display = "none";
-    }
-    </script>
-    <script src="/js/index.js"></script>
+  }
+  </script>
+  <script src="/js/index.js"></script>
 </body>
 
 
