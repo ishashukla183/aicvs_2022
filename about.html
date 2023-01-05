@@ -89,7 +89,7 @@
       border-top-right-radius: calc(36rem);
       border-bottom-right-radius: calc(36rem);
       border-bottom-left-radius: calc(36rem);
-      height: 8cm;
+      
       border-width: 4px;
       padding: 20px;
       border-color: black;
@@ -97,16 +97,19 @@
     }
     .card{
       margin-top: 20px;
+     width: 300px;
+      margin-left: 3px;
+      margin-right: 5px;
+     
     }
     .cards {
-      display: flex;
-      flex-direction: row;
-  
+      
       display: flex;
       flex-direction: row;
       align-content: center;
       flex-wrap: wrap;
-      justify-content: space-evenly;
+      justify-content: center;
+      
     }
   
     .cards h4,
@@ -129,7 +132,8 @@
       -ms-flex: 1 1 auto;
       flex: 1 1 auto;
       min-height: 1px;
-      padding: 0.25rem;
+      padding: 1rem;
+     
     }
     /* .card{
       border-color: black;
@@ -138,8 +142,8 @@
   
     .card-img{
         display: block;
-    margin-left: auto;
-    margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     .cbody{
       text-align: center;
@@ -153,115 +157,19 @@
         background-color: #EFEFEF !important;
       }
 
-      .navbar {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    background-color:white;
-    color:black;
-}
+      @media screen and (max-width: 1200px) {
+  .card {
+    width: 50%;
+    margin: 5px;
+  }
 
-.brand-title {
-    font-size: 1.5rem;
-    margin: .5rem;
-}
-
-.navbar-links {
-    height: 100%;
-}
-
-.navbar-links ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-links li {
-    list-style: none;
-}
-
-.navbar-links li a {
-    display: block;
-    text-decoration: none;
-    color:black;
-    padding: 1rem;
-}
-
-.navbar-links li:hover {
-    background-color: #555;
-}
-
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
+  @media screen and (max-width: 700px) {
+  .card {
     width: 100%;
-    background-color: black;
-    border-radius: 10px;
+    margin: 20px;
+  }
 }
-
-@media (max-width: 800px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .toggle-button {
-        display: flex;
-    }
-
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar-links ul li {
-        text-align: center;
-    }
-
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
 }
-
-nav {
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-}
-
-.open .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-  transform: rotate(-45deg) translate(-6px, 6px);
-}
-
-.open .bar2 {
-  opacity: 0;
-}
-
-.open .bar3 {
-  -webkit-transform: rotate(45deg) translate(-6px, -8px);
-  transform: rotate(45deg) translate(-6px, -8px);
-}
-
-
   </style>
   
   </head>
@@ -312,7 +220,7 @@ nav {
   
     <!-- About Section -->
   
-    <div class="w3-container content" style="padding-top: 40px" id="about">
+    <div class="w3-container content events1" style="padding-top: 40px" id="about">
       <div class="" style="text-align:center;">
         <h2 class="w3-center">ABOUT US</h2>
     </div>
@@ -352,7 +260,7 @@ nav {
   
   
     <!-- Intro Section -->
-    <div class="w3-container content" style="padding:auto 40px 50px; margin:auto 40px;" id="aboutt">
+    <div class="w3-container content events1" style="padding:auto 40px 50px; margin:auto 40px;" id="about">
       <h3 class="w3-center padding-bottom: 10px">How AI ML has changed the world</h3>
       <div class="w3-row-padding w3-center" style="margin-top:32px; font-size: 17px;">
         From the research we do on the Internet to the goods that come to our door with a single click, to recommendations
@@ -362,8 +270,9 @@ nav {
         AI has gone from a science-fiction dream to a critical part of our everyday lives.
   
       </div>
+      <br><br>
     </div>
-  
+  <div style="" class="events2">
     <div class="intro" style="padding-top: 100px;">
       <h3 class="w3-center">AICVS Student Committee 2022-23</h3>
       <h4 class="w3-center w3-large">The ones who runs this Club</h4>
@@ -471,10 +380,98 @@ nav {
           <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div>
       </div>
+  </div>
+</div>
+<div style="">
+  <div class="intro" style="padding-top: 100px;">
+    <h3 class="w3-center">AICVS Student Committee 2021-22</h3>
+    <h4 class="w3-center w3-large">The ones who ran this Club earlier</h4>
+
+  </div>
+  <br>
+
+  <div class="cardmain" >
+    <img class="card-img" src="img/sakshi_nalawade.jpeg" alt="Card image cap" style="height:270px; width:270px; flex-direction: column;">
+    <div class="cbody">
+      <h4 class="card-title" style="padding-top: 15px;">Sakshi Nalawade - Head Co-ordinator</h4>
+        <h5>sakshi.nalawade@cumminscollege.in</h5>
+    </div>
+  </div>
+
+  <br><br>
+  <div class="cards">
+      <div class="card">
+        <img class="card-img-top" src="img/sejal_kshirsagar.jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Sejal Kshirsagar</h4>
+          <h6 class="card-title">Project &amp; Internships</h6>
+          <div class="con">
+            <p>sejal.kshirsagar@cumminscollege.in</p>
+          </div>
+          <hr>
+          <h5>Team</h5>
+          <ul style="font-size: large;">
   
+            <li>Pranjal Chouhan</li>
+            <li>Juhi Ganvir</li>
+            <li>Sanika Kalloorkar</li>
+            <li>Vaishnavi Khillari</li>
+            <li>Swikruti Maind</li>
+            <li>Rutuja Wasu</li>
+          </ul>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="img/ritika_pande.jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Ritika Pande</h4>
+          <h6 class="card-title">Public Relations</h6>
+          <div class="con">
+            <p>ritika.pande@cumminscollege.in</p>
+          </div>
+          <hr>
+          <h5>Team</h5>
+          <ul style="font-size: large;">
+  
+            <li>Gauri Amin</li>
+            <li>Nisha Deshmukh</li>
+            <li>Yamini Dongaonkar</li>
+            <li>Piyusha Nair</li>
+            <li>Bhakti Patil</li>
+            <li>Sandhya Mathur</li>
+          </ul>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="img/deeksha_jagtap.jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Deeksha jagtap</h4>
+          <h6 class="card-title">Website &amp; Content</h6>
+          <div class="con">
+            <p>deeksha.jagtap@cumminscollege.in</p>
+          </div>
+          <hr>
+          <h5>Team</h5>
+          <ul style="font-size: large;">
+  
+            <li>Sakshi Ingale</li>
+            <li>Sannidhi Gokhale</li>
+            <li>Mukta Ogale</li>
+            <li>Diya Kantroo</li>
+            <li>Khushi Tilokani</li>
+            <li>Madhura Patil</li>
+          </ul>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+
   
     </div>
-  
+    </div>
     <br>
     <br>
     <!--
