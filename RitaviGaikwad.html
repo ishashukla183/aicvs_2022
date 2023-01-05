@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<title>Blogs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="./assets/w3.css">
+<style>
+
+  body h1,h2,h3,h4,h5,h6 {font-family: 'Crete Round', serif; }
+  .content{font-size: medium;}
+
+  .w3-bar {font-family: 'Crete Round', serif; font-size: medium;}
+
+  body, html {
+    height: 100%;
+    line-height: 1.8;
+  }
+
+  /* Full height image header */
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    /* background-image: url("./w3images/ai-5202869_1280.jpg"); */
+    min-height: 100%;
+  }
+
+  .bgimg-1 video{
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.95;
+  }
+
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+
+  .text1{
+    letter-spacing: 8px;
+    animation: text 3s 1;
+  }
+
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+  @keyframes text {
+    0%{
+      color: black;
+      margin-bottom: -40px;
+    }
+    30%{
+      letter-spacing: 25px;
+      margin-bottom: -40px;
+    }
+  }
+
+  </style>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  font-size: large;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./img/ai-5202869_1280.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.content p{
+    text-indent: 3em;
+    text-align: justify;
+}
+.motivate1{
+
+  background-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+
+}
+.motivate2{
+  background-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+}
+</style>
+<body>
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top ">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./img/logo.png" alt="Logo" width="45" height="45"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small ">
+      <a href="./index.html#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="./index.html#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="./blogs.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOGS</a>
+      <a href="./session.html"  class="w3-bar-item w3-button">SESSIONS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+  <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
+</nav>
+
+<div class="p-4">
+    <div class=" mt-5 p-3 my-3 " style="text-align:center; background-color:rgb(255, 255, 255);">
+      <h3 class="w3-center">All About Experience in ISRO</h3>
+      <p class="w3-center w3-large"><strong>By Ritavi Gaikwad</strong></p>
+</div>
+
+<div class="container-fluid p-5  content" >
+    
+    <h5>Indian Space Research Organization (ISRO)</h5>
+    <p>Just among other internship experiences you guys might have 
+        read, this one is about the most reputed organization in 
+        India. An organization with beautiful brains filled with 
+        galaxies, planets, and stars. For us, those are just stars but for 
+        them, it’s a new chance to explore more about our space. 
+        This specific organization where I got in is situated in 
+        Ahmedabad, Gujarat and this is how I got in.
+    </p>
+    <h5>How, When and Why</h5>
+    <p>
+        At first, I was trying to get an internship through college as 
+usual. But simultaneously I was applying for ISRO off-campus
+student program. I was not sure that I will get an internship 
+in ISRO, so I never fully dropped the idea of not applying for 
+other companies through college. Then I filled out the 
+student program form for ISRO and applied with my friend 
+Rutuja Deshpande in the month of March. With no response 
+for half a month, we lost hope. During the process of Suez 
+waters on campus, we got a response from ISRO. We 
+received a mail that our applications have been approved 
+and our interviews have been scheduled.
+    </p>
+    <p>We got excited but had no idea what to prepare. We 
+        researched the questionnaire online and found whatever was 
+        related. Finally, the day arrived and these were the questions 
+        they asked:
+
+        <ol>
+            <li>Which projects have you completed?</li>
+            <li>On which software have you worked?</li>
+            <li>Why should we have you?</li>
+            <li>What qualities in you can bring a change in our organization?</li>
+            <li>Which domains do you want to work for? And why?</li>
+        </ol>
+        And many related to the projects and core basics.
+    </p>
+    <p>Again, the wait was long, and we got a response finally in the 
+        mid of May and got our acceptance letter. In which they 
+        mentioned our mentor and the department we will be 
+        working. We got into Antenna mechanical design division 
+        (AMDD). The training program took place for a week and 
+        then we were assigned our projects. 
+    </p>
+    <p>
+        Getting a chance to explore a National organization like ISRO 
+is like a dream come true for every individual who aspires to 
+join it since their childhood. Just like a small kid in a fair,
+admiring giant wheels and trying to capture everything which 
+amuses her in those small eyes which are never going to be 
+enough, I was astonished by the amazing work and the 
+projects taking place in ISRO. It was a complete honor to get 
+a chance to experience some unbelievable miracles over 
+there so closely.
+    </p>
+    <p>
+        Talking about my project, it was a research-based project. 
+During the project, I was working on Ansys and NX software 
+platforms. My knowledge of core subjects like Strength of 
+materials, Machine Design, Materials technology, and 
+analysis and synthesis of mechanisms was very important 
+and turned out to be very useful. Buckling, bending moment,
+and material properties study were some key concepts.
+    </p>
+    <p>
+        For those who are aspiring to work for ISRO, it’s a great 
+learning exposure for every individual. The internship has 
+truly been a wonderful experience for me. The knowledge 
+and experience which you will gain during the internship is 
+definitely going to be beneficial to you in future projects and 
+roles. It will not only strengthen your resume but also boost 
+your confidence and develop you individually as well as 
+professionally.
+    </p>
+    <p>
+        I want to express my deep gratitude to ISRO (Space 
+applications center) for providing me with such a great 
+opportunity
+    </p>
+    <br><p>By Ritavi Gaikwad.</p>
+</div>
+<h3 class="w3-center" style="font-size: xx-large;size: 30px;"></h3>
+<div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <!--
+        <a href="./w3images/blog2post1.jpg">
+          <img src="./w3images/blog2post1.jpg" alt="post1" style="width:100%">
+        </a>
+
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+         
+        <a href="./w3images/blog2post2.png">
+            <img src="./w3images/blog2post2.png" alt="post2" style="padding-left:30px; width:100%">
+          </a>
+           -->
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+    <a href="./AnshikaDubey.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://www.instagram.com/aicvs/" class="text-light"><i class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/aicvs/"></i></a>
+      <a href="https://www.linkedin.com/company/cummins-aicvs/mycompany/" class="text-light"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZfSZGZDtVjPdkFkJqCQJXMjjcqxVrGvJffFvBTRKNPGcmXMlQxctgbpgdCrfKFfjsJCHL" class="text-light"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+      <a href="https://twitter.com/aicvs" class="text-light"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://www.youtube.com/channel/UCYkmq4s5ciIau6BFI97XJlA" class="text-light"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+
+    </div>
+  </footer>
+
+  <script>
+
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+
+
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
+  </script>
+  <script src="/js/index.js"></script>
+</body>
+</html>

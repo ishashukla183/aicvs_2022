@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>AICVS Homepage</title>
   <!-- Bootstrap core CSS -->
-  <link href='./vendor/bootstrap/css/bootstrap.min.css' rel="stylesheet">
+  <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
   <!-- Custom fonts for this template -->
@@ -169,38 +169,149 @@ html{
             font-size: 30px;
             font-weight: 700;
         }
+
+        .navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+    color:black;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color:black;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+nav {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
   </style>
 </head>
 
 <body>
-  <!-- Navigation -->
-  <!-- Navbar (sit on top) -->
-  <div class=" mainNav">
-    <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./img/logo.png" alt="Logo" width="45" height="45"></a>
-      <!-- Right-sided navbar links -->
 
-      <div class="w3-right w3-hide-small">
-        <a href="./events.html" class="w3-bar-item w3-button">EVENTS</a>
-        <a href="./blogs.html" class="w3-bar-item w3-button"></i>BLOGS</a>
-        <a href="./about.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i>ABOUT</a>
-        <a href="./about.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>HOME</a>
 
-      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-        <i class="fa fa-bars"></i>
+  <nav class="navbar">
+    <div class="brand-title"><a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./img/logo.png" alt="Logo" width="45" height="45"></a></div>
+      <a href="#" class="toggle-button" style="margin-top: 15px;" onclick="toggleMobileMenu(this)">
+        <span class="bar bar1"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar3"></span>
       </a>
-    </div>
-  </div>
-  
-  <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
-        <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
-        <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-        <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="./events.html" class="w3-bar-item w3-button">EVENTS</a></li>
+          <li><a href="./blogs.html" class="w3-bar-item w3-button">BLOGS</a></li>
+          <li><a href="./about.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i>ABOUT</a></li>
+          <li><a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>HOME</a></li>
+        </ul>
+      </div>
   </nav>
+  
+<!-- Navigation -->
+  <!-- Navbar (sit on top) -->
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <!-- <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">&times;</a>
+    <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-calendar fa-fw"></i>EVENTS</a>
+    <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fab fa-blogger fa-fw"></i>BLOGS</a>
+    <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user fa-fw"></i>ABOUT US</a>
+    <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-home fa-fw"></i>HOME</a>
+  </nav> -->
 
 
   <div class="events1">
@@ -420,32 +531,50 @@ html{
     </div>
   </div>
 </footer>
+
 <script>
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
+  
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+  
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
     }
-
-
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
-
-    function w3_open() {
-      if (mySidebar.style.display === 'block') {
-          mySidebar.style.display = 'none';
-      } else {
-          mySidebar.style.display = 'block';
-      }
-    }
-
-    // Close the sidebar with the close button
-    function w3_close() {
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
       mySidebar.style.display = "none";
+
     }
     </script>
     <script src="/js/index.js"></script>
+
+    <script>
+      const toggleButton = document.getElementsByClassName('toggle-button')[0]
+      const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+  
+      toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+      })
+
+      function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+    </script>
+
 </body>
 
 
