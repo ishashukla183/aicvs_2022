@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>BLOGS</title>
   <!-- Bootstrap core CSS -->
-  <link href='./vendor/bootstrap/css/bootstrap.min.css' rel="stylesheet">
+  <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
   <!-- Custom fonts for this template -->
@@ -22,147 +22,134 @@
   <link rel="stylesheet" href="./css/flipcard.css">
   <link rel="stylesheet" href="./css/w3.css">
   <style type="text/css">
+    .w3-white,
+    .w3-hover-white:hover {
+      color: #000 !important;
+      background-color: #fff !important;
+    }
+    .container{
+      padding: 6%;
+    }
+    .w3-card,
+    .w3-card-2 {
+      box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    }
+
+    .w3-bar {
+      width: 100%;
+
+    }
+
+    *,
+    ::after,
+    ::before {
+      box-sizing: border-box;
+    }
+
+    *,
+    ::after,
+    ::before {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.8;
+      color: #212529;
+      text-align: left;
+      background-color: #fff;
+    }
+
+    html {
+      font-family: Verdana, sans-serif;
+      font-size: 15px;
+      line-height: 1.8;
+      font-family: sans-serif;
+      line-height: 1.15;
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    .w3-container:after,
+    .w3-container:before,
+    .w3-panel:after,
+    .w3-panel:before,
+    .w3-row:after,
+    .w3-row:before,
+    .w3-row-padding:after,
+    .w3-row-padding:before,
+    .w3-cell-row:before,
+    .w3-cell-row:after,
+    .w3-clear:after,
+    .w3-clear:before,
+    .w3-bar:before,
+    .w3-bar:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    *,
+    ::after,
+    ::before {
+      box-sizing: border-box;
+    }
+
+    *,
+    ::after,
+    ::before {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
 
 
-
-.w3-white, .w3-hover-white:hover {
-    color: #000!important;
-    background-color: #fff!important;
-}
-.w3-card, .w3-card-2 {
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-}
-.w3-bar {
-    width: 100%;
-    overflow: hidden;
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-user agent stylesheet
-div {
-    display: block;
-}
-.mainNav {
-    font-family: 'Raleway', sans-serif;
-    font-size: medium;
-}
-body, html {
-    height: 100%;
-    line-height: 1.8;
-}
-
-body {
-    margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
-}
-html, body {
-    font-family: Verdana,sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-:root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-}
-html {
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
-}
-
-html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-.w3-container:after, .w3-container:before, .w3-panel:after, .w3-panel:before, .w3-row:after, .w3-row:before, .w3-row-padding:after, .w3-row-padding:before, .w3-cell-row:before, .w3-cell-row:after, .w3-clear:after, .w3-clear:before, .w3-bar:before, .w3-bar:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
 
     .nav-item {
       font-family: 'Raleway', sans-serif !important;
       font-weight: 500 !important;
     }
 
-    body, html {
-    height: 100%;
-    line-height: 1.8;
-}
-.card-img-top{
-  margin: 0px;
-}
-
-
     body {
       font-family: 'Raleway', sans-serif !important;
-
-    }
-    .events1 {
       background-color: #F6F6F6 !important;
     }
 
     .events2 {
       background-color: #EFEFEF !important;
+      margin: auto 0px;
     }
+
+    .events1 {
+      margin: auto 0px;
+      background-color: #F6F6F6 !important;
+    }
+
     .bgimg-1 {
       background-position: center;
       background-size: cover;
       /* background-image: url("./w3images/ai-5202869_1280.jpg"); */
       min-height: 100%;
     }
+
     video {
       object-fit: cover;
       position: absolute;
@@ -181,28 +168,25 @@ html {
       z-index: 1;
       background: rgba(0, 0, 0, 0.6);
     }
-    .photo {
-
-      height: 350px;
-      background-position: center;
-      transition: transform .2s;
-    }
 
     .text1 {
       letter-spacing: 3px;
       animation: text 3s 1;
     }
-    .row .col-lg-4{
+
+    .row .col-lg-4 {
       padding: 40px 20px;
     }
 
     .card {
 
-      height: 350px;
+      height: 400px;
     }
-.card-old{
-  height:400px;
-}
+
+    .card-old {
+      height: 400px;
+    }
+
     @keyframes text {
       0% {
         color: black;
@@ -214,120 +198,460 @@ html {
         margin-bottom: -40px;
       }
     }
+
     .heading-center {
-            text-align: center;
-            font-size: 30px;
-            font-weight: 700;
-        }
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+    color:black;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color:black;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+nav {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
 
 
   </style>
 </head>
 
 <body>
-  <!-- Navigation -->
-  <!-- Navbar (sit on top) -->
-  <div class="w3-top mainNav">
-    <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./img/logo.png" alt="Logo" width="45" height="45"></a>
-      <!-- Right-sided navbar links -->
 
-      <div class="w3-right w3-hide-small ">
-        <a href="./events.html" class="w3-bar-item w3-button">EVENTS</a>
-        <a href="./blogs.html" class="w3-bar-item w3-button"></i>BLOGS</a>
-        <a href="./about.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i>ABOUT</a>
-        <a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>HOME</a>
 
-      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-        <i class="fa fa-bars"></i>
-      </a>
+  <nav class="navbar">
+    <div class="brand-title"><a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./img/logo.png" alt="Logo" width="45" height="45"></a></div>
+    <a href="#" class="toggle-button" style="margin-top: 15px;" onclick="toggleMobileMenu(this)">
+      <span class="bar bar1"></span>
+      <span class="bar bar2"></span>
+      <span class="bar bar3"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="./events.html" class="w3-bar-item w3-button">EVENTS</a></li>
+        <li><a href="./blogs.html" class="w3-bar-item w3-button">BLOGS</a></li>
+        <li><a href="./about.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i>ABOUT</a></li>
+        <li><a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>HOME</a></li>
+      </ul>
     </div>
-  </div>
+  </nav>
+
+<!-- Navigation -->
+  <!-- Navbar (sit on top) -->
 
   <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
-    <a href="./index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
-    <a href="./index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-    <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+  <!-- <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">&times;</a>
+    <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-calendar fa-fw"></i>EVENTS</a>
+    <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fab fa-blogger fa-fw"></i>BLOGS</a>
+    <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user fa-fw"></i>ABOUT US</a>
+    <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-home fa-fw"></i>HOME</a>
+  </nav> -->
 
-    <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-    <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-    </nav>
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <!-- <nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+      <a href="./events.html" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
+      <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+      <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+    </nav> -->
 
-    
+    <!-- Page Header -->
 
-
-  <!-- Page Header -->  
-
-  <div class="events1 container container-fluid" style="padding-top: 40px; margin:auto 0px;  min-width:100%;">
-    <div class="container container-fluid">
-      <div class=" mt-5 p-3 my-3 " style="text-align:center;">
-        <h2 class="w3-center">BLOGS</h2>
-    </div>
+    <div class="events1 container container-fluid" style="margin:0px 0px;  min-width:100%;">
+        <div class="" style="text-align:center;">
+          <h2 class="w3-center">BLOGS</h2>
+        </div>
         <br>
         <br>
+        <center>
+          <div class="heading-center">2022-23</div>
+        </center>
+        <br>
+        <br>
+        <div class="row">
+         
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card-old card">
+              <img class="card-img-top" src="./img/gamebasedlearningapproach.jpeg" alt="Card image">
+              <div class="card-body text-center">
+                <h4 class="card-title">Game Based Learning Approach to AI</h4>
+                <p class="card-text">By Dr.Minakshi Atre</p>
+                <a href="Dr.MinakshiAtre.html" class="btn btn-dark">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card-old card">
+            <img class="card-img-top" src="./img/microsoft_engage_ishwari_patil.png" alt="Card image">
+            <div class="card-body text-center">
+              <h4 class="card-title">Microsoft Engage to Full Time Software Engineer at Microsoft</h4></h4>
+              <p class="card-text">By Ishwari Patil</p>
+              <a href="IshwariPatil.html" class="btn btn-dark">READ MORE</a>
+            </div>
+          </div>
+        </div> 
+
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card-old card">
+            <img class="card-img-top" src="./img/ritvi_isro.jpg" alt="Card image">
+            <div class="card-body text-center">
+              <h4 class="card-title">All About Experience in ISRO</h4></h4>
+              <p class="card-text">By Ritvi Gaikwad</p>
+              <a href="RitviGaikwad.html" class="btn btn-dark">READ MORE</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card-old card">
+            <img class="card-img-top" src="./img/kagmaincrop.jpeg" alt="Card image">
+            <div class="card-body text-center">
+              <h4 class="card-title">Kaggle competition</h4></h4>
+              <p class="card-text">By AICVS</p>
+              <a href="kaggle.html" class="btn btn-dark">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card-old card">
+            <img class="card-img-top" src="./img/generationgooglescholarship.png" alt="Card image">
+            <div class="card-body text-center">
+              <h4 class="card-title">Generation Google Scholarship</h4>
+              <p class="card-text">By Anshika Dubey</p>
+              <a href="AnshikaDubey.html" class="btn btn-dark">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+        <br><br><br>
+        </div>
+        
+
+        <div class="events2 container container-fluid" style="margin:0px 0px;  min-width:100%;">
         <center>
           <div class="heading-center">2021-22</div>
         </center>
         <br>
         <br>
-        <div class="card-div">
-
         <div class="row">
 
-
           <div class="col-lg-4 col-md-6 col-sm-12">
-
-            <div class="card">
-              <img class="card-img-top" src="./img/blog5.png" alt="Card image">
+            <div class="card-old card">
+              <img class="card-img-top" src="./img/AICVS 3.0-AUGMENTED.png" alt="Card image">
               <div class="card-body text-center">
-                <h4 class="card-title">Navigating the realm</h4>
-                <p class="card-text">Meghana Bhange</p>
-                <a href="meghana.html" class="btn btn-dark">Read More</a>
-
+                <h4 class="card-title">Bringing Realism to Mobile Augmented Reality</h4>
+                <p class="card-text">By Sanjana Date</p>
+                <a href="SanjanaDate.html" class="btn btn-dark">READ MORE</a>
               </div>
-
-
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card">
-              <img class="card-img-top" src="./img/blog1poster.jpeg" alt="Card image">
+            <div class="card-old card">
+              <img class="card-img-top" src="./img/AICVS 3.0-ACADEMIA.png" alt="Card image">
               <div class="card-body text-center">
-                <h4 class="card-title">Towards Eaton Pratibha award</h4>
-                <p class="card-text">Manasi Mujumdar</p>
-                <a href="ManasiMujumdar.html" class="btn btn-dark">Read More</a>
+                <h4 class="card-title">Opportunities in AI-Academia and Industry </h4>
+                <p class="card-text">By Radhika Sethi</p>
+                <a href="RadhikaSethiA3.html" class="btn btn-dark">READ MORE</a>
               </div>
-
-            </div>
-
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card">
-              <img class="card-img-top" src="./img/blog2poster.png" alt="Card image">
-              <div class="card-body text-center">
-                <h4 class="card-title">Finding your Niche</h4>
-                <p class="card-text">Radhika Sethi</p>
-                <a href="RadhikaSethi.html" class="btn btn-dark">Read More</a>
-              </div>
-
             </div>
           </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card-old card">
+              <img class="card-img-top" src="./img/AICVS 3.0-FANCY JOB.png" alt="Card image">
+              <div class="card-body text-center">
+                <h4 class="card-title">Is Engineering All About Getting a Fancy Job ?</h4>
+                <p class="card-text">By Sai Ghule</p>
+                <a href="SaiGhule.html" class="btn btn-dark">READ MORE</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card-old card">
+              <img class="card-img-top" src="./img/AICVS 3.0-PHD.png" alt="Card image">
+              <div class="card-body text-center">
+                <h4 class="card-title">Undergrad Research and Applying to PhD Programs</h4>
+                <p class="card-text">By Michelle Thalakottur</p>
+                <a href="MichelleThalakottur.html" class="btn btn-dark">READ MORE</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card card-old">
+              <img class="card-img-top" src="./img/AICVS 3.0-PHD.png" alt="Card image">
+              <div class="card-body text-center">
+                <h4 class="card-title">Getting Started With Kaggle</h4>
+                <p class="card-text">By Krutika Kulkarni</p>
+                <a href="KrutikaKulkarni.html" class="btn btn-dark">READ MORE</a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
+    <br><br><br>
+  
+    <div class="events1 container container-fluid" style="margin:0px 0px;  min-width:100%;">
+        <div class="heading-center" style="text-align:center;"> 2020-2021 </div>
+
+
+        <br>
+
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <img class="card-img-top" src="./img/AICVS 2.0- AI FOR EVERYONE.png" alt="Card image">
+                <div class="card-body text-center">
+                  <h4 class="card-title">AI For Everyone</h4>
+                  <p class="card-text">Ashish Salunkhe</p>
+                  <a href="AshishSalunkhe.html" class="btn btn-dark">Read More</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <img class="card-img-top" src="./img/AICVS 2.0-PLACE.png" alt="Card image">
+                <div class="card-body text-center">
+                  <h4 class="card-title">Off Campus Placements</h4>
+                  <p class="card-text">By Affan Sheikh</p>
+                  <a href="AffanSheikh.html" class="btn btn-dark">READ MORE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <img class="card-img-top" src="./img/AICVS 2.0-NLP.png" alt="Card image">
+                <div class="card-body text-center">
+                  <h4 class="card-title">Learning NLP-The Fun Way</h4>
+                  <p class="card-text">By Manpreet Budhraja</p>
+                  <a href="Manpreet Budhraja.html" class="btn btn-dark">READ MORE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <img class="card-img-top" src="./img/AICVS 2.0-RUTU.png" alt="Card image">
+                <div class="card-body text-center">
+                  <h4 class="card-title">Spark AR!</h4>
+                  <p class="card-text">By Rutuja Kolhe</p>
+                  <a href="RutujaKolhe.html" class="btn btn-dark">READ MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+
+      <div class="events2 container container-fluid" style="margin:0px 0px; min-width:100%;">
+        <div class="heading-center">2019-20</div>
+        <br>
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <img class="card-img-top" src="./img/AICVS 1.0-JINAL.png" alt="Card image">
+                <div class="card-body text-center">
+                  <h4 class="card-title">Skills Assessment and it’s importance</h4>
+                  <p class="card-text">By Jinal Chhajed</p>
+                  <a href="JinalChhajed.html" class="btn btn-dark">READ MORE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <img class="card-img-top" src="./img/AICVS 1.0-INTERNSHIP.png" alt="Card image">
+                <div class="card-body text-center">
+                  <h4 class="card-title">Internship approach and Scholarships</h4>
+                  <p class="card-text">By Shrusti Jain</p>
+                  <a href="ShrustiJain.html" class="btn btn-dark">Read More</a>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <img class="card-img-top" src="./img/AICVS 1.0-INTERNSHIP (1).png" alt="Card image">
+                <div class="card-body text-center">
+                  <h4 class="card-title">Everything About Eaton Pratibha Scholarship</h4>
+                  <p class="card-text">By Esha Chiplunkar</p>
+                  <a href="EshaChiplunkar.html" class="btn btn-dark">READ MORE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <img class="card-img-top" src="./img/AICVS 1.0-oppo.png" alt="Card image">
+                <div class="card-body text-center">
+                  <h4 class="card-title">Exploring opportunities for undergraduates</h4>
+                  <p class="card-text">By Chaitanyasuma Jain</p>
+                  <a href="ChaitanyasumaJain.html" class="btn btn-dark">READ MORE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+
+              <div class="card">
+                <img class="card-img-top" src="./img/blog5.png" alt="Card image">
+                <div class="card-body text-center">
+                  <h4 class="card-title">Navigating the realm</h4>
+                  <p class="card-text">Meghana Bhange</p>
+                  <a href="meghana.html" class="btn btn-dark">Read More</a>
+
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <img class="card-img-top" src="./img/blog1poster.jpeg" alt="Card image">
+                <div class="card-body text-center">
+                  <h4 class="card-title">Towards Eaton Pratibha award</h4>
+                  <p class="card-text">Manasi Mujumdar</p>
+                  <a href="ManasiMujumdar.html" class="btn btn-dark">Read More</a>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <img class="card-img-top" src="./img/blog2poster.png" alt="Card image">
+                <div class="card-body text-center">
+                  <h4 class="card-title">Finding your Niche</h4>
+                  <p class="card-text">Radhika Sethi</p>
+                  <a href="RadhikaSethi.html" class="btn btn-dark">Read More</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
     </div>
-  </div>
 
-
-  <div class="events1">
-    <div class="container container-fluid">
-
-
-      <div class="card-div">
+    <div class="events1 container container-fluid" style="margin:0px 0px;  min-width:100%;">
         <br>
         <br>
         <center>
@@ -350,7 +674,7 @@ html {
             </div>
 
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12" >
+          <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card-old card ">
               <img class="card-img-top" src="./img/events/22-2-2020.jpeg" alt="Card image">
               <div class="card-body text-center">
@@ -387,13 +711,9 @@ html {
                 <p class="card-text">Meghana Bhange</p>
                 <a href="kaggle7.html" class="btn btn-dark">Read More</a>
               </div>
-
-
-
             </div>
-
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12" >
+          <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card-old card ">
               <img class="card-img-top" src="./img/events/11-1-2020.937d84f11693.png" alt="Card image">
               <div class="card-body text-center">
@@ -401,43 +721,55 @@ html {
                 <p class="card-text">Yogesh Kulkarni</p>
                 <a href="kaggle7.html" class="btn btn-dark">Read More</a>
               </div>
-
-
-
-            </div>
-
-          </div>
-
-
-
-
-            </div>
-
-          </div>
-
-
-
-
-
-          </div>
-
-
-
-
-      <br><br>
 </div>
+</div>
+</div>
+    </div>
+
+  <script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active')
+    })
+
+          function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+  </script>
 
 
-
+    <script>
+  
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+      
+      
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+      
+      function w3_open() {
+        if (mySidebar.style.display === 'block') {
+          mySidebar.style.display = 'none';
+        } else {
+          mySidebar.style.display = 'block';
+        }
+      }
+      
+      // Close the sidebar with the close button
+      function w3_close() {
+          mySidebar.style.display = "none";
+      }
+      </script>
+      <script src="/js/index.js"></script>
 
 </body>
-<!-- Bootstrap core JavaScript -->
-<script src="/vendor/jquery/jquery.min.js"></script>
-<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Custom scripts for this template -->
-<script src="/js/clean-blog.min.js"></script>
-<script src="/js/type.js"></script>
 
 
 
